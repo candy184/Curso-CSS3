@@ -1,22 +1,17 @@
-1. Agrega un ícono de fondo a los enlaces externos que comiencen con `http`.
-   ```css
-   a[href^="http"] {
-       background-image: url('link.svg');
-       background-repeat: no-repeat;
-       padding-left: 20px;
-   }
-   ```
+/* Estilo para enlaces externos que comienzan con "https" */
+a[href^="https"] {
+    background-image: url('link.svg');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
 
-2. Cambia el color de los enlaces que terminan en `.pdf` a rojo.
-   ```css
-   a[href$=".pdf"] {
-       color: red;
-   }
-   ```
+/* Cambiar color de enlaces que terminan en ".pdf" */
+a[href$=".pdf"] {
+    color: red;
+}
 
-3. Aplica un estilo en cursiva a todos los párrafos que siguen a un `<h2>`.
-   ```css
-   h2 ~ p {
-       font-style: italic;
-   }
-   ```
+/* Estilo en cursiva para párrafos después de un <h2> */
+h2 ~ p {
+    font-style: italic;
+}
+```
