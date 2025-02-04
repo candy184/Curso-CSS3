@@ -1,0 +1,17 @@
+/* Estilo para enlaces externos que comienzan con "https" */
+a[href^="https"] {
+    background-image: url('link.svg');
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+/* Cambiar color de enlaces que terminan en ".pdf" */
+a[href$=".pdf"] {
+    color: red;
+}
+
+/* Estilo en cursiva para párrafos después de un <h2> */
+h2 ~ p {
+    font-style: italic;
+}
+```
