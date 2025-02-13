@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Ejemplo de Web Fonts en CSS3
+    </title>
+
+    <!-- Importando una fuente de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Definiendo una fuente personalizada con @font-face */
+        @font-face {
+            font-family: 'MiFuente';
+            src: url('MiFuente.woff2') format('woff2'),
+                 url('MiFuente.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'MiFuente', sans-serif;
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>
+      Ejemplo de Fuentes en CSS3
+    </h1>
+    <p>
+      Este párrafo usa la fuente 'Roboto' de Google Fonts.
+    </p>
+    <p>
+      El título utiliza una fuente personalizada cargada con `@font-face`.
+    </p>
+
+</body>
+</html>
