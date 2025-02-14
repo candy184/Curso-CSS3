@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Imágenes de Bordes y Efectos de Caja en CSS3
+    </title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #90ffcb, #9da4ff);
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            color: black;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #2a4e57;
+            text-transform: uppercase;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Efecto de imagen en los bordes */
+        .border-image {
+            border: 20px solid transparent;
+            border-image-source: url('https://source.unsplash.com/200x200/?pattern');
+            border-image-slice: 30;
+            padding: 20px;
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        /* Caja con sombras múltiples */
+        .shadow-box {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
+                        -5px -5px 15px rgba(255, 255, 255, 0.5),
+                        inset 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Bordes redondeados extremos */
+        .rounded-box {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, #ff82c0, #cb7eff);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>
+          🎨 Bordes y Efectos en CSS3
+        </h1>
+
+        <div class="border-image">
+            🖼 Este div tiene una imagen como borde.
+        </div>
+
+        <div class="shadow-box">
+            🌟 Caja con sombras múltiples para un efecto 3D.
+        </div>
+
+        <div class="rounded-box">
+            🔵 Caja Circular
+        </div>
+    </div>
+
+</body>
+</html>
