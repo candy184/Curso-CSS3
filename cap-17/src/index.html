@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Blend Modes, Filtros y Máscaras</title>
+    <style>
+        body {
+            background-color: lightgray;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .blend-mode {
+            background-image: url('bunny.png'); /* Imagen de fondo */
+            width: 300px;
+            height: 200px;
+            display: inline-block;
+        }
+
+        .blend-mode img {
+            width: 100%;
+            height: auto;
+            mix-blend-mode: screen; /* Mezcla con el fondo */
+        }
+
+        .filter-effect {
+            width: 300px;
+            height: 200px;
+            background: url('example.jpg') center/cover no-repeat;
+            filter: blur(5px) brightness(120%) contrast(90%);
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .masking {
+            width: 300px;
+            height: 200px;
+            background: url('mask-image.jpg') center/cover no-repeat;
+            -webkit-mask-image: url('mask.svg'); /* Para navegadores WebKit */
+            mask-image: url('mask.svg'); /* Aplicación de máscara */
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Ejemplo de Blend Modes</h2>
+    <div class="blend-mode">
+        <img src="descarga.jpg" alt="Ejemplo de mezcla">
+    </div>
+
+    <h2>Ejemplo de Filtros</h2>
+    <div class="filter-effect"></div>
+
+    <h2>Ejemplo de Máscara</h2>
+    <div class="masking"></div>
+
+</body>
+</html>
