@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Playground</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .controls {
+            margin: 20px;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            height: 300px;
+            margin: auto;
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+
+        .box {
+            width: 80px;
+            height: 80px;
+            background-color: royalblue;
+            color: white;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Flexbox Playground</h1>
+    <p>Haz clic en los botones para cambiar la distribución de los elementos.</p>
+
+    <div class="controls">
+        <button onclick="changeFlex('row')">Fila</button>
+        <button onclick="changeFlex('column')">Columna</button>
+        <button onclick="changeFlex('space-around')">Espaciado</button>
+        <button onclick="changeFlex('center')">Centrado</button>
+        <button onclick="changeFlex('flex-end')">Abajo/Derecha</button>
+    </div>
+
+    <div class="container" id="flexContainer">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+    <script>
+        function changeFlex(type) {
+            let container = document.getElementById('flexContainer');
+
+            if (type === 'row' || type === 'column') {
+                container.style.flexDirection = type;
+            } else {
+                container.style.justifyContent = type;
+            }
+        }
+    </script>
+
+</body>
+</html>
