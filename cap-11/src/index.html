@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformaciones 2D en CSS3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: royalblue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        /* Aplicando transformaciones */
+        .rotate:hover {
+            transform: rotate(45deg);
+        }
+
+        .scale:hover {
+            transform: scale(1.5);
+        }
+
+        .translate:hover {
+            transform: translateX(50px);
+        }
+
+        .skew:hover {
+            transform: skew(20deg);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejemplo de Transformaciones 2D en CSS3</h1>
+    <p>Pasa el mouse sobre cada caja para ver el efecto.</p>
+
+    <div class="container">
+        <div class="box rotate">Rotar</div>
+        <div class="box scale">Escalar</div>
+        <div class="box translate">Trasladar</div>
+        <div class="box skew">Sesgar</div>
+    </div>
+
+</body>
+</html>
