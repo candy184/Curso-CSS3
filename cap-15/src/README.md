@@ -11,24 +11,24 @@
         }
 
         .container {
-            width: 50vw; /* 50% del ancho de la ventana del navegador */
-            height: 30vh; /* 30% de la altura de la ventana del navegador */
-            background-color: lightblue;
-            padding: 1rem; /* Relativo al tamaño de la fuente raíz */
             border: 5px solid navy;
-            box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+            box-sizing: border-box;
+            background-color: lightblue;
+            height: 30vh; 
+            padding: 1rem;
+            width: 50vw;
         }
 
         .dynamic-box {
-            width: calc(100% - 20px); /* Calcula el ancho restando 20px */
-            height: max-content; /* Toma el tamaño máximo del contenido */
             background-color: coral;
+            height: max-content;
             padding: 10px;
             text-align: center;
+            width: calc(100% - 20px);
         }
     </style>
-</head>
-<body>
+ </head>
+  <body>
 
     <div class="container">
         <div class="dynamic-box">
@@ -36,5 +36,5 @@
         </div>
     </div>
 
-</body>
-</html>
+  </body>
+ </html>
