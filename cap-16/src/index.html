@@ -6,33 +6,33 @@
     <title>Ejemplo de CSS Grid</title>
     <style>
         .container {
+            background-color: lightgray;
             display: grid;
             grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
             grid-template-rows: 100px 200px; /* Dos filas con tamaños definidos */
             gap: 10px; /* Espaciado entre celdas */
-            background-color: lightgray;
             padding: 10px;
         }
 
         .item {
-            background-color: coral;
-            display: flex;
             align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            color: white;
+            background-color: coral;
             border-radius: 5px;
+            color: white;
+            display: flex;
+            font-size: 1.5rem;
+            justify-content: center;
         }
 
         /* Ejemplo de un elemento que ocupa más espacio */
         .item-large {
+            background-color: rgb(208, 119, 235);
             grid-column: span 2; /* Ocupa dos columnas */
             grid-row: span 2; /* Ocupa dos filas */
-            background-color: rgb(208, 119, 235);
         }
     </style>
-</head>
-<body>
+ </head>
+  <body>
 
     <div class="container">
         <div class="item">1</div>
@@ -43,5 +43,5 @@
         <div class="item">6</div>
     </div>
 
-</body>
-</html>
+  </body>
+ </html>
