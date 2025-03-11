@@ -1,11 +1,12 @@
 /* Estilos iniciales */
 .boton {
+    animation: pulso 2s infinite;
     background-color: #3498db;
-    color: white;
-    padding: 15px 30px;
-    font-size: 16px;
     border: none;
+    color: white;
     cursor: pointer;
+    font-size: 16px;
+    padding: 15px 30px;
     transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
@@ -28,9 +29,4 @@
     100% {
         transform: scale(1);
     }
-}
-
-/* Aplicando la animación */
-.boton {
-    animation: pulso 2s infinite;
 }
