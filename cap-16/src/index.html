@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,12 @@
         .container {
             background-color: lightgray;
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
-            grid-template-rows: 100px 200px; /* Dos filas con tamaños definidos */
-            gap: 10px; /* Espaciado entre celdas */
+            gap: 10px;
+            /* Espaciado entre celdas */
+            grid-template-columns: repeat(3, 1fr);
+            /* Tres columnas de igual tamaño */
+            grid-template-rows: 100px 200px;
+            /* Dos filas con tamaños definidos */
             padding: 10px;
         }
 
@@ -27,12 +31,16 @@
         /* Ejemplo de un elemento que ocupa más espacio */
         .item-large {
             background-color: rgb(208, 119, 235);
-            grid-column: span 2; /* Ocupa dos columnas */
-            grid-row: span 2; /* Ocupa dos filas */
+            grid-column: span 2;
+            /* Ocupa dos columnas */
+            grid-row: span 2;
+            /* Ocupa dos filas */
         }
     </style>
- </head>
-  <body>
+
+</head>
+
+<body>
 
     <div class="container">
         <div class="item">1</div>
@@ -43,5 +51,6 @@
         <div class="item">6</div>
     </div>
 
-  </body>
- </html>
+</body>
+
+</html>
