@@ -5,42 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo de Pseudo-clases y Pseudo-elementos</title>
     <style>
-        /* Pseudo-clase :nth-child */
-        li:nth-child(odd) {
-            background-color: #f0f0f0;
-        }
+    /* Pseudo-elemento ::before */
+    li::before {
+        content: "✅ ";
+        color: green;
+    }
 
-        /* Pseudo-clase :hover */
-        li:hover {
-            background-color: lightblue;
-            cursor: pointer;
-        }
+    /* Pseudo-elemento ::first-letter */
+    p::first-letter {
+        color: red;
+        font-size: 2em;
+    }
 
-        /* Pseudo-clase :target */
-        #destacado:target {
-            background-color: yellow;
-            font-weight: bold;
-        }
+    /* Pseudo-elemento ::selection */
+    ::selection {
+        background: black;
+        color: white;
+    }
 
-        /* Pseudo-elemento ::before */
-        li::before {
-            content: "✅ ";
-            color: green;
-        }
+    /* Pseudo-clase :hover */
+    li:hover {
+        background-color: lightblue;
+        cursor: pointer;
+    }
 
-        /* Pseudo-elemento ::first-letter */
-        p::first-letter {
-            
-            color: red;
-            font-size: 2em;
-        }
+    /* Pseudo-clase :nth-child */
+    li:nth-child(odd) {
+        background-color: #f0f0f0;
+    }
 
-        /* Pseudo-elemento ::selection */
-        ::selection {
-            background: black;
-            color: white;
-        }
-    </style>
+    /* Pseudo-clase :target */
+    #destacado:target {
+        background-color: yellow;
+        font-weight: bold;
+    }
+</style>
+
 </head>
 <body>
     <h1>Lista de Elementos con Pseudo-clases y Pseudo-elementos</h1>
