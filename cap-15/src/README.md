@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,10 @@
         }
 
         .container {
+            background-color: lightblue;
             border: 5px solid navy;
             box-sizing: border-box;
-            background-color: lightblue;
-            height: 30vh; 
+            height: 30vh;
             padding: 1rem;
             width: 50vw;
         }
@@ -27,14 +28,17 @@
             width: calc(100% - 20px);
         }
     </style>
- </head>
-  <body>
+
+</head>
+
+<body>
 
     <div class="container">
         <div class="dynamic-box">
             ¡Este cuadro usa tamaños dinámicos!
         </div>
     </div>
+    
+</body>
 
-  </body>
- </html>
+</html>
