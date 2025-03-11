@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-      Ejemplo de Web Fonts en CSS3
+        Ejemplo de Web Fonts en CSS3
     </title>
 
     <!-- Importando una fuente de Google Fonts -->
@@ -14,11 +15,11 @@
         /* Definiendo una fuente personalizada con @font-face */
         @font-face {
             font-family: 'MiFuente'
-            font-weight: normal;
+                font-weight: normal;
             font-style: normal;
             font-display: swap;
             src: url('MiFuente.woff2') format('woff2'),
-                 url('MiFuente.woff') format('woff');
+                url('MiFuente.woff') format('woff');
         }
 
         body {
@@ -26,13 +27,13 @@
             font-family: 'Roboto', sans-serif;
             padding: 20px;
             text-align: center;
-            
+
         }
 
         h1 {
             color: #333;
             font-family: 'MiFuente', sans-serif;
-            
+
         }
 
         p {
@@ -41,17 +42,19 @@
         }
     </style>
 </head>
- <body>
+
+<body>
 
     <h1>
-      Ejemplo de Fuentes en CSS3
+        Ejemplo de Fuentes en CSS3
     </h1>
     <p>
-      Este párrafo usa la fuente 'Roboto' de Google Fonts.
+        Este párrafo usa la fuente 'Roboto' de Google Fonts.
     </p>
     <p>
-      El título utiliza una fuente personalizada cargada con `@font-face`.
+        El título utiliza una fuente personalizada cargada con `@font-face`.
     </p>
 
- </body>
+</body>
+
 </html>
