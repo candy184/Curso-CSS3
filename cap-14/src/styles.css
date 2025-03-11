@@ -1,0 +1,36 @@
+/* Estilos iniciales */
+.boton {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+/* Transición cuando el mouse pasa sobre el botón */
+.boton:hover {
+    background-color: #2ecc71;
+    transform: scale(1.2);
+}
+
+/* Definición de una animación */
+@keyframes pulso {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Aplicando la animación */
+.boton {
+    animation: pulso 2s infinite;
+}
