@@ -1,76 +1,76 @@
 <!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Efectos de Texto en CSS3
-    </title>
-    <style>
-        body {
-            background-color: #1e1e1e;
-            color: white;
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-
-        /* Texto con sombra */
-        h1 {
-            font-size: 50px;
-            text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.7);
-        }
-
-        /* Degradado en el texto */
-        .gradient-text {
-            background: linear-gradient(to right, #ff416c, #ff4b2b);
-            font-size: 40px;
-            font-weight: bold;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        /* Animación de parpadeo */
-        .blinking-text {
-            color: yellow;
-            animation: blink 1s infinite alternate;
-            font-size: 30px;
-        }
-
-        @keyframes blink {
-            from {
-                opacity: 1;
+    <html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Efectos de Texto en CSS3
+        </title>
+        <style>
+            body {
+                background-color: #1e1e1e;
+                color: white;
+                font-family: 'Arial', sans-serif;
+                text-align: center;
+                padding: 50px;
             }
-
-            to {
-                opacity: 0.3;
+    
+            /* Texto con sombra */
+            h1 {
+                font-size: 50px;
+                text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.7);
             }
-        }
-
-        /* Resaltar palabras seleccionadas */
-        ::selection {
-            background: cyan;
-            color: black;
-        }
-    </style>
-</head>
-
-<body>
-
-    <h1>
-        🌟 Efectos de Texto en CSS3 🌟
-    </h1>
-    <p class="gradient-text">
-        Texto con efecto degradado
-    </p>
-    <p class="blinking-text">
-        ¡Este texto parpadea!
-    </p>
-    <p>
-        Selecciona este texto para ver el efecto especial de selección.
-    </p>
-
-</body>
+    
+            /* Degradado en el texto */
+            .gradient-text {
+                background: linear-gradient(to right, #ff416c, #ff4b2b);
+                font-size: 40px;
+                font-weight: bold;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+    
+            /* Animación de parpadeo */
+            .blinking-text {
+                color: yellow;
+                animation: blink 1s infinite alternate;
+                font-size: 30px;
+            }
+    
+            @keyframes blink {
+                from {
+                    opacity: 1;
+                }
+    
+                to {
+                    opacity: 0.3;
+                }
+            }
+    
+            /* Resaltar palabras seleccionadas */
+            ::selection {
+                background: cyan;
+                color: black;
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+        <h1>
+            🌟 Efectos de Texto en CSS3 🌟
+        </h1>
+        <p class="gradient-text">
+            Texto con efecto degradado
+        </p>
+        <p class="blinking-text">
+            ¡Este texto parpadea!
+        </p>
+        <p>
+            Selecciona este texto para ver el efecto especial de selección.
+        </p>
+    
+    </body>
 
 </html>
