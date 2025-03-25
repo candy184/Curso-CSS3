@@ -1,57 +1,57 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Pseudo-clases y Pseudo-elementos</title>
-    <style>
-    /* Pseudo-elemento ::before */
-    li::before {
-        content: "✅ ";
-        color: green;
-    }
-
-    /* Pseudo-elemento ::first-letter */
-    p::first-letter {
-        color: red;
-        font-size: 2em;
-    }
-
-    /* Pseudo-elemento ::selection */
-    ::selection {
-        background: black;
-        color: white;
-    }
-
-    /* Pseudo-clase :hover */
-    li:hover {
-        background-color: lightblue;
-        cursor: pointer;
-    }
-
-    /* Pseudo-clase :nth-child */
-    li:nth-child(odd) {
-        background-color: #f0f0f0;
-    }
-
-    /* Pseudo-clase :target */
-    #destacado:target {
-        background-color: yellow;
-        font-weight: bold;
-    }
-</style>
-
-</head>
-<body>
-    <h1>Lista de Elementos con Pseudo-clases y Pseudo-elementos</h1>
-    <p>Selecciona este texto para ver el efecto de `::selection`.</p>
-    <ul>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li id="destacado">Elemento destacado (haz clic en el enlace)</li>
-        <li>Elemento 4</li>
-        <li>Elemento 5</li>
-    </ul>
-    <p><a href="#destacado">Ir al elemento destacado</a></p>
-</body>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejemplo de Pseudo-clases y Pseudo-elementos</title>
+        <style>
+        /* Pseudo-elemento ::before */
+        li::before {
+            content: "✅ ";
+            color: green;
+        }
+    
+        /* Pseudo-elemento ::first-letter */
+        p::first-letter {
+            color: red;
+            font-size: 2em;
+        }
+    
+        /* Pseudo-elemento ::selection */
+        ::selection {
+            background: black;
+            color: white;
+        }
+    
+        /* Pseudo-clase :hover */
+        li:hover {
+            background-color: lightblue;
+            cursor: pointer;
+        }
+    
+        /* Pseudo-clase :nth-child */
+        li:nth-child(odd) {
+            background-color: #f0f0f0;
+        }
+    
+        /* Pseudo-clase :target */
+        #destacado:target {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+    
+    </head>
+    <body>
+        <h1>Lista de Elementos con Pseudo-clases y Pseudo-elementos</h1>
+        <p>Selecciona este texto para ver el efecto de `::selection`.</p>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li id="destacado">Elemento destacado (haz clic en el enlace)</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+        </ul>
+        <p><a href="#destacado">Ir al elemento destacado</a></p>
+    </body>
 </html>
