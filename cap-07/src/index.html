@@ -1,99 +1,99 @@
 <!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Diseño de Múltiples Columnas en CSS3
-    </title>
-    <style>
-        body {
-            background-color: #f8f9fa;
-            color: #333;
-            font-family: 'Arial', sans-serif;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .container {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-        }
-
-        h1 {
-            color: #d63447;
-            font-size: 36px;
-            text-align: center;
-            text-transform: uppercase;
-        }
-
-        /* Establecer columnas con espacio entre ellas */
-        .news {
-            column-count: 3;
-            column-gap: 30px;
-            column-rule: 2px solid #d63447;
-            font-size: 18px;
-            line-height: 1.6;
-            text-align: justify;
-        }
-
-        /* Expandir el título en todas las columnas */
-        h2 {
-            background: #d63447;
-            border-radius: 5px;
-            column-span: all;
-            color: white;
-            margin-bottom: 15px;
-            padding: 10px;
-            text-align: center;
-        }
-
-        /* Agregar efectos a las primeras letras */
-        p::first-letter {
-            color: #d63447;
-            font-size: 2em;
-            font-weight: bold;
-        }
-
-        /* Resaltar texto seleccionado */
-        ::selection {
-            background: #d63447;
-            color: white;
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="container">
-        <h1>
-            📰 Noticias CSS3 📰
-        </h1>
-        <div class="news">
-            <h2>
-                Diseño en Múltiples Columnas
-            </h2>
-            <p>
-                CSS3 permite dividir el contenido en múltiples columnas, mejorando la legibilidad y organización del
-                texto en pantalla. Con la propiedad `column-count`, podemos definir cuántas columnas tendrá un bloque de
-                texto.
-            </p>
-            <p>
-                Además, con `column-rule`, es posible agregar líneas separadoras para mejorar la estética del contenido.
-                En este ejemplo, cada párrafo se distribuye de manera uniforme en tres columnas.
-            </p>
-            <p>
-                Otro truco útil es `column-span`, que permite que ciertos elementos, como los títulos, abarquen todas
-                las columnas, ayudando a estructurar mejor la información.
-            </p>
+    <html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Diseño de Múltiples Columnas en CSS3
+        </title>
+        <style>
+            body {
+                background-color: #f8f9fa;
+                color: #333;
+                font-family: 'Arial', sans-serif;
+                padding: 20px;
+                text-align: center;
+            }
+    
+            .container {
+                background: white;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                max-width: 800px;
+                margin: auto;
+                padding: 20px;
+            }
+    
+            h1 {
+                color: #d63447;
+                font-size: 36px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+    
+            /* Establecer columnas con espacio entre ellas */
+            .news {
+                column-count: 3;
+                column-gap: 30px;
+                column-rule: 2px solid #d63447;
+                font-size: 18px;
+                line-height: 1.6;
+                text-align: justify;
+            }
+    
+            /* Expandir el título en todas las columnas */
+            h2 {
+                background: #d63447;
+                border-radius: 5px;
+                column-span: all;
+                color: white;
+                margin-bottom: 15px;
+                padding: 10px;
+                text-align: center;
+            }
+    
+            /* Agregar efectos a las primeras letras */
+            p::first-letter {
+                color: #d63447;
+                font-size: 2em;
+                font-weight: bold;
+            }
+    
+            /* Resaltar texto seleccionado */
+            ::selection {
+                background: #d63447;
+                color: white;
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+        <div class="container">
+            <h1>
+                📰 Noticias CSS3 📰
+            </h1>
+            <div class="news">
+                <h2>
+                    Diseño en Múltiples Columnas
+                </h2>
+                <p>
+                    CSS3 permite dividir el contenido en múltiples columnas, mejorando la legibilidad y organización del
+                    texto en pantalla. Con la propiedad `column-count`, podemos definir cuántas columnas tendrá un bloque de
+                    texto.
+                </p>
+                <p>
+                    Además, con `column-rule`, es posible agregar líneas separadoras para mejorar la estética del contenido.
+                    En este ejemplo, cada párrafo se distribuye de manera uniforme en tres columnas.
+                </p>
+                <p>
+                    Otro truco útil es `column-span`, que permite que ciertos elementos, como los títulos, abarquen todas
+                    las columnas, ayudando a estructurar mejor la información.
+                </p>
+            </div>
         </div>
-    </div>
-
-</body>
+    
+    </body>
 
 </html>
