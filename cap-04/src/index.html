@@ -1,57 +1,50 @@
 <!DOCTYPE html>
-    <html lang="es">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ejemplo de Pseudo-clases y Pseudo-elementos</title>
+        <title>Ejemplo de Identación Correcta</title>
         <style>
-        /* Pseudo-elemento ::before */
-        li::before {
-            content: "✅ ";
-            color: green;
-        }
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 20px;
+            }
+            
+            .contenedor {
+                max-width: 600px;
+                background: white;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
     
-        /* Pseudo-elemento ::first-letter */
-        p::first-letter {
-            color: red;
-            font-size: 2em;
-        }
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
     
-        /* Pseudo-elemento ::selection */
-        ::selection {
-            background: black;
-            color: white;
-        }
+            li {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+            }
     
-        /* Pseudo-clase :hover */
-        li:hover {
-            background-color: lightblue;
-            cursor: pointer;
-        }
-    
-        /* Pseudo-clase :nth-child */
-        li:nth-child(odd) {
-            background-color: #f0f0f0;
-        }
-    
-        /* Pseudo-clase :target */
-        #destacado:target {
-            background-color: yellow;
-            font-weight: bold;
-        }
-    </style>
-    
+            li:last-child {
+                border-bottom: none;
+            }
+        </style>
     </head>
     <body>
-        <h1>Lista de Elementos con Pseudo-clases y Pseudo-elementos</h1>
-        <p>Selecciona este texto para ver el efecto de `::selection`.</p>
-        <ul>
-            <li>Elemento 1</li>
-            <li>Elemento 2</li>
-            <li id="destacado">Elemento destacado (haz clic en el enlace)</li>
-            <li>Elemento 4</li>
-            <li>Elemento 5</li>
-        </ul>
-        <p><a href="#destacado">Ir al elemento destacado</a></p>
+        <div class="contenedor">
+            <h1>Ejemplo de Identación</h1>
+            <p>Este es un ejemplo de código HTML con buena indentación y estructura.</p>
+    
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+        </div>
     </body>
 </html>
