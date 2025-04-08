@@ -1,0 +1,28 @@
+       /* Definiendo una fuente personalizada con @font-face */
+            @font-face {
+                font-family: 'MiFuente'
+                    font-weight: normal;
+                font-style: normal;
+                font-display: swap;
+                src: url('MiFuente.woff2') format('woff2'),
+                    url('MiFuente.woff') format('woff');
+            }
+    
+            body {
+                background-color: #f4f4f4;
+                font-family: 'Roboto', sans-serif;
+                padding: 20px;
+                text-align: center;
+    
+            }
+    
+            h1 {
+                color: #333;
+                font-family: 'MiFuente', sans-serif;
+    
+            }
+    
+            p {
+                font-size: 18px;
+                line-height: 1.5;
+            }
