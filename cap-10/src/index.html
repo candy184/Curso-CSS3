@@ -7,82 +7,8 @@
         <title>
             Gradientes en CSS3
         </title>
-        <style>
-            body {
-                background: linear-gradient(to right, #ff416c, #ff4b2b);
-                color: white;
-                font-family: 'Arial', sans-serif;
-                padding: 50px;
-                text-align: center;
-            }
-    
-            /* Animación en el gradiente */
-            .animated-gradient-box {
-                animation: gradientMove 5s infinite alternate;
-                background: linear-gradient(-45deg, #ff416c, #ff4b2b, #ffcc00, #4bffa5);
-                background-size: 300% 300%;
-                border-radius: 10px;
-                height: 150px;
-                width: 100%;
-            }
-    
-            .container {
-                background: white;
-                border-radius: 15px;
-                box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-                color: black;
-                margin: auto;
-                max-width: 900px;
-                padding: 30px;
-            }
-    
-            h1 {
-                color: #d63447;
-                font-size: 36px;
-                text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-                text-transform: uppercase;
-            }
-    
-            /* Gradiente lineal dinámico */
-            .linear-gradient-box {
-                background: linear-gradient(45deg, #ff416c, #ff4b2b, #ffcc00);
-                border-radius: 10px;
-                height: 150px;
-                margin: 20px 0;
-                width: 100%;
-            }
-    
-            /* Combinación de múltiples gradientes */
-            .multi-gradient-box {
-                background:
-                    linear-gradient(to right, #ff416c, #ff4b2b),
-                    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.5), transparent);
-                border-radius: 10px;
-                height: 150px;
-                margin: 20px 0;
-                width: 100%;
-            }
-    
-            /* Gradiente radial con efecto de iluminación */
-            .radial-gradient-box {
-                background: radial-gradient(circle at center, #ffcc00, #ff4b2b, #ff416c);
-                border-radius: 10px;
-                height: 150px;
-                margin: 20px 0;
-                width: 100%;
-            }
-    
-            @keyframes gradientMove {
-                from {
-                    background-position: 0% 50%;
-                }
-    
-                to {
-                    background-position: 100% 50%;
-                }
-            }
-        </style>
-    
+        <link rel="stylesheet" href="styles.css">
+           
     </head>
     
     <body>
