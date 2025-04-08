@@ -7,74 +7,7 @@
         <title>
             Imágenes de Fondo en CSS3
         </title>
-        <style>
-            body {
-                background: linear-gradient(to right, #ff416c, #ff4b2b);
-                color: white;
-                font-family: 'Arial', sans-serif;
-                padding: 50px;
-                text-align: center;
-            }
-    
-            .container {
-                background: white;
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-                color: black;
-                max-width: 800px;
-                margin: auto;
-                padding: 20px;
-            }
-    
-            h1 {
-                font-size: 36px;
-                text-transform: uppercase;
-            }
-    
-            /* Sección con múltiples imágenes de fondo */
-            .multi-background {
-                background-image: url('https://source.unsplash.com/800x600/?nature,water'),
-                    url('https://source.unsplash.com/800x600/?texture,abstract');
-                background-position: center, top right;
-                background-repeat: no-repeat, repeat;
-                background-size: cover, 150px;
-                color: white;
-                font-size: 24px;
-                padding: 50px;
-                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-            }
-    
-            /* Imagen de fondo con recorte y origen */
-            .background-clip {
-                background: url('https://source.unsplash.com/800x600/?mountains,sunset') no-repeat center;
-                background-size: cover;
-                background-clip: text;
-                color: transparent;
-                font-size: 40px;
-                font-weight: bold;
-                margin: 20px 0;
-                -webkit-background-clip: text;
-            }
-    
-            /* Animación en la imagen de fondo */
-            .animated-background {
-                animation: backgroundMove 10s infinite alternate;
-                background: url('https://source.unsplash.com/800x600/?galaxy,stars') no-repeat center;
-                background-size: cover;
-                border-radius: 10px;
-                padding: 50px;
-            }
-    
-            @keyframes backgroundMove {
-                from {
-                    background-position: left;
-                }
-    
-                to {
-                    background-position: right;
-                }
-            }
-        </style>
+       <link rel="stylesheet" href="styles.css">
     </head>
     
     <body>
